@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "ModbusData";
+}
+
+<h2>ModbusData</h2>
+@if ((string)ViewData["ErrorMessage"] != "NoError")
+{
+    <ul><li><font color="red">Error: @ViewData["ErrorMessage"]</font></li></ul>
+}
+
+<ul class="list-group" style="float: left;">  
+    <li class="list-group-item">Date: @ViewData["ReadDate"]</li>
+    <li class="list-group-item">@ViewData["FlowRate"]</li>
+    <li class="list-group-item">@ViewData["EFlowRate"]</li>
+    <li class="list-group-item">@ViewData["Velocity"]</li>
+    <li class="list-group-item">@ViewData["Velocity"]</li>
+    <li class="list-group-item">@ViewData["FluidSound"]</li>
+    <li class="list-group-item">@ViewData["PosAccumulator"]</li>
+    <li class="list-group-item">@ViewData["PosDecFraction"]</li>
+    <li class="list-group-item">@ViewData["NegAccumulator"]</li>
+    <li class="list-group-item">@ViewData["NegDecFraction"]</li>
+    <li class="list-group-item">@ViewData["PosEnrgAcc"]</li>
+    <li class="list-group-item">@ViewData["PosEnrgDecFraction"]</li>
+    <li class="list-group-item">@ViewData["NegEnrgAcc"]</li>
+    <li class="list-group-item">@ViewData["NegEnrgDecFraction"]</li>
+    <li class="list-group-item">@ViewData["NetAcc"]</li>
+    <li class="list-group-item">@ViewData["NetEnrgAcc"]</li>
+    <li class="list-group-item">@ViewData["NetEnrgDecFraction"]</li>
+    <li class="list-group-item">@ViewData["Temperature1"]</li>
+    <li class="list-group-item">@ViewData["Temperature2"]</li>
+</ul>
+<ul class="list-group" style="float: left;">
+    <li class="list-group-item">@ViewData["AnalogInAI3"]</li>
+    <li class="list-group-item">@ViewData["AnalogInAI4"]</li>
+    <li class="list-group-item">@ViewData["AnalogInAI5"]</li>
+    <li class="list-group-item">@ViewData["AnalogInAI5"]</li>
+    <li class="list-group-item">@ViewData["CurrentInAI3-1"]</li>
+    <li class="list-group-item">@ViewData["CurrentInAI3-2"]</li>
+    <li class="list-group-item">@ViewData["CurrentInAI3-3"]</li>
+    <li class="list-group-item">@ViewData["ResistanceInlet"]</li>
+    <li class="list-group-item">@ViewData["ResistanceOutlet"]</li>
+    <li class="list-group-item">@ViewData["TotalTravel"]</li>
+    <li class="list-group-item">@ViewData["TotalDeltaTravel"]</li>
+    <li class="list-group-item">@ViewData["UpStreamTravel"]</li>
+    <li class="list-group-item">@ViewData["DownStreamTravel"]</li>
+    <li class="list-group-item">@ViewData["OutputCurrent"]</li>
+    <li class="list-group-item">@ViewData["UpStreamStr"]</li>
+    <li class="list-group-item">@ViewData["DownStreamStr"]</li>
+    <li class="list-group-item">@ViewData["Language"]</li>
+    <li class="list-group-item">@ViewData["Raynolds"]</li>
+    <li class="list-group-item">@ViewData["MeasuredTravelToCalcTravel"]</li>
+</ul>
+<div style="clear:both">
+    <p>Signal Quality (0-99)<br /></p>
+    <div class="progress" style="width:30%;"><div class="progress-bar" id="progBar" role="progressbar" aria-valuenow="@ViewData["SignalQuality"]" aria-valuemin="0" aria-valuemax="99" style="width: @ViewData["SignalQuality"]%;">@ViewData["SignalQuality"]</div></div>
+</div>
+
