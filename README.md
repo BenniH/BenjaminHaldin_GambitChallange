@@ -30,6 +30,10 @@ The GetError function takes one ushort parameter and checks which bit is high. I
 
 The GetError function takes one ushort parameter and picks the low byte which is returned as a integer.
 
+#### Index.html
+
+You can find the index.html in ModbusConvert\index.html. Added two lists and a progressbar for the signal quality. Used bootstrap for styling.
+
 ### Publishing
 
 The code can be found in this repository and a hosted web app can be found at [Web app](http://benjaminhaldin-gmbtchallange.azurewebsites.net).
