@@ -1,4 +1,4 @@
-#BenjaminHaldin Gambit Challange
+# BenjaminHaldin Gambit Challange
 
 ## Problem description
 
